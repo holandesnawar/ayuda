@@ -1,0 +1,514 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Holandés con Nawar | La última formación de neerlandés que comprarás</title>
+    <meta name="description"
+        content="Academia online de neerlandés para hispanohablantes. Domina el idioma real para vivir, trabajar y estudiar en Países Bajos.">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+
+<body>
+
+    <!-- Floating Background Orbs -->
+    <div class="orb orb-1"></div>
+    <div class="orb orb-2"></div>
+
+    <!-- Mobile Menu Overlay -->
+    <div class="mobile-menu-overlay" id="mobileMenu">
+        <a href="#" class="mobile-nav-link" onclick="toggleMenu()">Inicio</a>
+        <a href="#cursos" class="mobile-nav-link" onclick="toggleMenu()">Cursos</a>
+        <a href="#blog" class="mobile-nav-link" onclick="toggleMenu()">Blog</a>
+        <a href="#contacto" class="mobile-nav-link" onclick="toggleMenu()">Contacto</a>
+        <div style="display: flex; flex-direction: column; gap: 1rem; margin-top: 2rem;">
+            <a href="#" class="btn btn-secondary" onclick="toggleMenu()">Acceso alumnos</a>
+            <a href="#cursos" class="btn btn-primary" onclick="toggleMenu()">Apúntate</a>
+        </div>
+        <button class="mobile-menu-btn" onclick="toggleMenu()" style="position: absolute; top: 2rem; right: 2rem;">
+            <i class="fas fa-times"></i>
+        </button>
+    </div>
+
+    <!-- Fixed Navbar Wrapper (Apple Style) -->
+    <div class="navbar-fixed-wrapper">
+        <nav class="nav-pill">
+            <div class="logo">NAWAR</div>
+
+            <ul class="nav-links">
+                <li><a href="#" class="nav-link">Inicio</a></li>
+                <li><a href="#cursos" class="nav-link">Cursos</a></li>
+                <li><a href="#blog" class="nav-link">Blog</a></li>
+                <li><a href="#contacto" class="nav-link">Contacto</a></li>
+            </ul>
+
+            <div class="nav-actions">
+                <a href="#" class="btn btn-secondary">Acceso alumnos</a>
+                <a href="#cursos" class="btn btn-primary">Apúntate</a>
+            </div>
+
+            <button class="mobile-menu-btn" onclick="toggleMenu()">
+                <i class="fas fa-bars"></i>
+            </button>
+        </nav>
+    </div>
+
+    <!-- Hero Section -->
+    <header class="hero">
+        <div class="container hero-content">
+            <div class="hero-text animate-fade-up">
+                <h1>La última formación de neerlandés que comprarás en toda tu vida.</h1>
+                <p class="hero-subtitle delay-100">La migración a Países Bajos es una realidad. Súmate a los miles de
+                    hispanohablantes que ya dominan el neerlandés y abren nuevas oportunidades.</p>
+
+                <div class="hero-actions delay-200">
+                    <a href="#curso-principal" class="btn btn-primary">Quiero aprender neerlandés</a>
+                    <a href="#cursos" class="btn btn-secondary">Ver todos los cursos</a>
+                </div>
+
+                <div class="hero-benefits delay-300">
+                    <div class="benefit-item">
+                        <i class="fas fa-check-circle benefit-icon"></i>
+                        <span>Aprueba tus exámenes de integración</span>
+                    </div>
+                    <div class="benefit-item">
+                        <i class="fas fa-check-circle benefit-icon"></i>
+                        <span>Consigue mejores oportunidades laborales</span>
+                    </div>
+                    <div class="benefit-item">
+                        <i class="fas fa-check-circle benefit-icon"></i>
+                        <span>Intégrate en el día a día sin miedo</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="hero-visual animate-fade-up delay-200">
+                <div class="hero-3d-platform">
+                    <div class="platform-base"></div>
+                    <div class="platform-layer-1"></div>
+                    <div class="platform-card-float">
+                        <h4>Alumnos Activos</h4>
+                        <div class="stat">+2.4k</div>
+                    </div>
+                    <!-- Additional floating element -->
+                    <div class="platform-card-float"
+                        style="top: 60%; right: auto; left: -5%; width: 180px; transform: translateZ(60px);">
+                        <h4>Tasa de Éxito</h4>
+                        <div class="stat">98%</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Identification Section -->
+    <section class="identification">
+        <div class="container">
+            <div class="text-center animate-fade-up">
+                <h2 class="mb-md">Somos lo que buscas si...</h2>
+            </div>
+            <div class="id-grid">
+                <div class="glass-panel id-card animate-fade-up delay-100">
+                    <div style="display: flex; align-items: start;">
+                        <i class="fas fa-check check-icon"></i>
+                        <p>Quieres aprender neerlandés desde casa, a tu ritmo y sin horarios fijos.</p>
+                    </div>
+                </div>
+                <div class="glass-panel id-card animate-fade-up delay-200">
+                    <div style="display: flex; align-items: start;">
+                        <i class="fas fa-check check-icon"></i>
+                        <p>Necesitas combinar trabajo, familia y estudio sin volverte loco.</p>
+                    </div>
+                </div>
+                <div class="glass-panel id-card animate-fade-up delay-300">
+                    <div style="display: flex; align-items: start;">
+                        <i class="fas fa-check check-icon"></i>
+                        <p>Quieres entender el neerlandés de la calle, no solo el de los libros de texto.</p>
+                    </div>
+                </div>
+                <div class="glass-panel id-card animate-fade-up delay-300">
+                    <div style="display: flex; align-items: start;">
+                        <i class="fas fa-check check-icon"></i>
+                        <p>Necesitas apoyo real para exámenes oficiales y trámites de visa/integración.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Target Audience Section -->
+    <section class="audience">
+        <div class="container">
+            <div class="text-center">
+                <h2 class="mb-lg">¿Para quién está diseñado nuestro método?</h2>
+            </div>
+            <div class="audience-grid">
+                <div class="glass-panel audience-card">
+                    <div class="audience-icon"><i class="fas fa-home"></i></div>
+                    <h3>Residentes en NL</h3>
+                    <p>Ya vives aquí pero te cuesta integrarte. Empieza a entender las noticias, habla con tus vecinos y
+                        siéntete parte de la sociedad.</p>
+                </div>
+                <div class="glass-panel audience-card">
+                    <div class="audience-icon"><i class="fas fa-plane-arrival"></i></div>
+                    <h3>Nueva Vida</h3>
+                    <p>¿Planeas mudarte? Llega con una base sólida para no depender solo del inglés y acelerar tu
+                        adaptación desde el día uno.</p>
+                </div>
+                <div class="glass-panel audience-card">
+                    <div class="audience-icon"><i class="fas fa-briefcase"></i></div>
+                    <h3>Profesionales</h3>
+                    <p>Mejora tu puesto, comunícate con clientes y accede a oportunidades laborales que requieren el
+                        idioma local.</p>
+                </div>
+                <div class="glass-panel audience-card">
+                    <div class="audience-icon"><i class="fas fa-graduation-cap"></i></div>
+                    <h3>Formación</h3>
+                    <p>Accede a universidades o MBO/HBO. Aprueba tus exámenes y entiende las clases y trabajos sin
+                        estrés.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Methodology Section -->
+    <section class="methodology">
+        <div class="container">
+            <div class="text-center">
+                <h2 class="mb-md">Cómo funciona el método Holandés con Nawar</h2>
+                <p style="color: var(--text-muted); max-width: 600px; margin: 0 auto;">Un sistema paso a paso pensado
+                    exclusivamente para hispanohablantes.</p>
+            </div>
+            <div class="method-steps">
+                <div class="step-card">
+                    <div class="step-number">01</div>
+                    <h3 class="step-title">Estructura Clara</h3>
+                    <p style="color: var(--text-muted); font-size: 0.9rem;">Curso por módulos y niveles (A0–A1 base)
+                        para avanzar sin perderte.</p>
+                </div>
+                <div class="step-card">
+                    <div class="step-number">02</div>
+                    <h3 class="step-title">Vídeos Bilingües</h3>
+                    <p style="color: var(--text-muted); font-size: 0.9rem;">Explicaciones en español y neerlandés para
+                        que entiendas cada matiz.</p>
+                </div>
+                <div class="step-card">
+                    <div class="step-number">03</div>
+                    <h3 class="step-title">Práctica Real</h3>
+                    <p style="color: var(--text-muted); font-size: 0.9rem;">Ejercicios, vocabulario por temas y
+                        gramática esencial aplicada.</p>
+                </div>
+                <div class="step-card">
+                    <div class="step-number">04</div>
+                    <h3 class="step-title">Soporte Total</h3>
+                    <p style="color: var(--text-muted); font-size: 0.9rem;">Sesiones de dudas y comunidad para que nunca
+                        te sientas solo.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Product Spotlight (A0-A1) -->
+    <section class="spotlight" id="curso-principal">
+        <div class="container">
+            <div class="spotlight-card">
+                <div class="spotlight-glow"></div>
+                <span
+                    style="color: var(--accent-orange); font-weight: 600; letter-spacing: 1px; text-transform: uppercase; font-size: 0.9rem;">Producto
+                    Estrella</span>
+                <h2 class="mb-md" style="margin-top: 1rem;">Tu primer gran paso: de 0 a A1 con el Método Holandés con
+                    Nawar</h2>
+
+                <div class="spotlight-features">
+                    <div class="spotlight-feature">
+                        <i class="fas fa-video text-orange"></i>
+                        <span>Horas de contenido en vídeo de alta calidad</span>
+                    </div>
+                    <div class="spotlight-feature">
+                        <i class="fas fa-infinity text-orange"></i>
+                        <span>Acceso de por vida al curso</span>
+                    </div>
+                    <div class="spotlight-feature">
+                        <i class="fas fa-sync text-orange"></i>
+                        <span>Actualizaciones futuras incluidas</span>
+                    </div>
+                    <div class="spotlight-feature">
+                        <i class="fas fa-users text-orange"></i>
+                        <span>Acceso a soporte y comunidad privada</span>
+                    </div>
+                </div>
+
+                <div
+                    style="background: rgba(255,255,255,0.05); padding: 1.5rem; border-radius: 12px; margin-bottom: 2rem; text-align: left;">
+                    <h4 style="margin-bottom: 1rem;">Lo que conseguirás:</h4>
+                    <ul style="display: grid; grid-template-columns: 1fr 1fr; gap: 1rem; list-style: none;">
+                        <li style="display: flex; gap: 0.5rem;"><i class="fas fa-check text-orange"></i> Poder
+                            presentarte a exámenes iniciales</li>
+                        <li style="display: flex; gap: 0.5rem;"><i class="fas fa-check text-orange"></i> Entender
+                            conversaciones básicas</li>
+                        <li style="display: flex; gap: 0.5rem;"><i class="fas fa-check text-orange"></i> Sentirte seguro
+                            en trámites</li>
+                        <li style="display: flex; gap: 0.5rem;"><i class="fas fa-check text-orange"></i> Perder el miedo
+                            a hablar</li>
+                    </ul>
+                </div>
+
+                <a href="#" class="btn btn-primary" style="font-size: 1.2rem; padding: 1rem 2.5rem;">Ver todo lo que
+                    incluye el curso A0–A1</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials -->
+    <section class="testimonials">
+        <div class="container">
+            <div class="text-center">
+                <h2 class="mb-lg">Lo que dicen nuestros alumnos</h2>
+            </div>
+            <div class="testimonial-grid">
+                <div class="glass-panel testimonial-card">
+                    <div class="stars">
+                        <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i
+                            class="fas fa-star"></i><i class="fas fa-star"></i>
+                    </div>
+                    <p class="quote">"Gracias al método de Nawar aprobé mi examen de integración a la primera. Las
+                        explicaciones en español marcan la diferencia."</p>
+                    <p class="author">- María G., España</p>
+                </div>
+                <div class="glass-panel testimonial-card">
+                    <div class="stars">
+                        <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i
+                            class="fas fa-star"></i><i class="fas fa-star"></i>
+                    </div>
+                    <p class="quote">"Conseguí mi primer trabajo en una empresa holandesa. Ahora entiendo las bromas en
+                        la oficina y me siento uno más."</p>
+                    <p class="author">- Carlos R., Colombia</p>
+                </div>
+                <div class="glass-panel testimonial-card">
+                    <div class="stars">
+                        <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i
+                            class="fas fa-star"></i><i class="fas fa-star"></i>
+                    </div>
+                    <p class="quote">"Llevaba años intentando aprender con apps y libros, pero solo con este curso
+                        entendí la gramática real. 100% recomendado."</p>
+                    <p class="author">- Ana P., México</p>
+                </div>
+            </div>
+            <div class="text-center">
+                <div class="social-proof-line">
+                    <i class="fab fa-instagram text-orange"></i>
+                    <span style="margin-left: 0.5rem;">Cada semana, miles de hispanohablantes mejoran su neerlandés con
+                        nosotros en <strong>@holandes.nawar</strong></span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Free Resources & Lead Magnet -->
+    <section class="resources container">
+        <!-- Free Content -->
+        <div class="glass-panel" style="padding: 3rem;">
+            <h3 class="mb-sm">Aprende gratis cada día</h3>
+            <p class="mb-md" style="color: var(--text-muted);">No tienes por qué gastar para empezar. Descubre nuestros
+                recursos gratuitos.</p>
+
+            <div style="margin-bottom: 2rem;">
+                <div style="margin-bottom: 1rem;">
+                    <h4 style="margin-bottom: 0.5rem;"><i class="fas fa-pen-fancy text-orange"></i> Blog Educativo</h4>
+                    <p style="font-size: 0.9rem; color: var(--text-muted);">Artículos prácticos sobre gramática, cultura
+                        y vida en NL.</p>
+                </div>
+                <div>
+                    <h4 style="margin-bottom: 0.5rem;"><i class="fab fa-instagram text-orange"></i> Instagram</h4>
+                    <p style="font-size: 0.9rem; color: var(--text-muted);">Consejos diarios, quizzes y mini-clases en
+                        @holandes.nawar.</p>
+                </div>
+            </div>
+
+            <div style="display: flex; gap: 1rem; flex-wrap: wrap;">
+                <a href="#blog" class="btn btn-secondary">Ver últimos artículos</a>
+                <a href="#" class="btn btn-secondary"><i class="fab fa-instagram"></i> Seguir en Instagram</a>
+            </div>
+        </div>
+
+        <!-- Lead Magnet -->
+        <div class="lead-magnet">
+            <h3>🎁 Guía Gratuita</h3>
+            <p><strong>Las diferencias entre 'zijn' y 'hebben' explicadas para hispanohablantes.</strong></p>
+            <ul>
+                <li><i class="fas fa-check-circle"></i> Deja de confundir los verbos más importantes.</li>
+                <li><i class="fas fa-check-circle"></i> Ejemplos prácticos de la vida real.</li>
+                <li><i class="fas fa-check-circle"></i> Explicación directa en español.</li>
+            </ul>
+            <form class="magnet-form" onsubmit="event.preventDefault();">
+                <input type="email" placeholder="Tu mejor email" class="magnet-input" required>
+                <div style="font-size: 0.8rem; opacity: 0.8;">
+                    <input type="checkbox" required> Acepto la política de privacidad.
+                </div>
+                <button type="submit" class="btn btn-dark">Quiero mi guía gratis</button>
+            </form>
+        </div>
+    </section>
+
+    <!-- FAQ -->
+    <section class="faq">
+        <div class="container">
+            <div class="text-center">
+                <h2 class="mb-lg">Preguntas Frecuentes</h2>
+            </div>
+
+            <div class="faq-item">
+                <div class="faq-question">
+                    ¿Por qué aprender neerlandés si ya hablo inglés?
+                    <i class="fas fa-chevron-down text-orange"></i>
+                </div>
+                <div class="faq-answer">
+                    Aunque muchos hablan inglés, el neerlandés es la clave para la verdadera integración, mejores
+                    trabajos y conectar con la cultura local.
+                </div>
+            </div>
+
+            <div class="faq-item">
+                <div class="faq-question">
+                    ¿Necesito experiencia previa con idiomas?
+                    <i class="fas fa-chevron-down text-orange"></i>
+                </div>
+                <div class="faq-answer">
+                    No. Nuestro método A0 empieza desde lo más básico, asumiendo que es tu primer contacto con el
+                    idioma.
+                </div>
+            </div>
+
+            <div class="faq-item">
+                <div class="faq-question">
+                    ¿Puedo estudiar a mi ritmo?
+                    <i class="fas fa-chevron-down text-orange"></i>
+                </div>
+                <div class="faq-answer">
+                    Sí, el acceso es de por vida y 100% online. Tú decides cuándo y dónde estudiar.
+                </div>
+            </div>
+
+            <div class="faq-item">
+                <div class="faq-question">
+                    ¿Qué soporte tendré si me atasco?
+                    <i class="fas fa-chevron-down text-orange"></i>
+                </div>
+                <div class="faq-answer">
+                    Tendrás acceso a nuestra comunidad de alumnos y soporte directo para resolver cualquier duda que te
+                    surja.
+                </div>
+            </div>
+
+            <div class="faq-item">
+                <div class="faq-question">
+                    ¿En qué se diferencia esta academia de otras?
+                    <i class="fas fa-chevron-down text-orange"></i>
+                </div>
+                <div class="faq-answer">
+                    Nos especializamos exclusivamente en hispanohablantes. Conocemos tus errores comunes y te explicamos
+                    todo comparándolo con tu idioma materno.
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Final CTA -->
+    <section class="container text-center" style="padding: 6rem 0;">
+        <h2 class="mb-md" style="font-size: 2.5rem;">El neerlandés no tiene por qué ser una barrera.</h2>
+        <p class="mb-md" style="color: var(--text-muted); max-width: 600px; margin: 0 auto 2rem;">Con el método adecuado
+            y apoyo real, puede convertirse en tu mayor ventaja en Países Bajos.</p>
+        <div style="display: flex; gap: 1rem; justify-content: center; flex-wrap: wrap;">
+            <a href="#curso-principal" class="btn btn-primary">Empezar ahora con el curso A0–A1</a>
+            <a href="#contacto" class="btn btn-secondary">Hablar con nosotros</a>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="footer-grid">
+                <div>
+                    <h4 class="logo mb-sm">Holandés con Nawar</h4>
+                    <p style="font-size: 0.9rem; color: var(--text-muted);">Formaciones de neerlandés para
+                        hispanohablantes que quieren algo más que un curso genérico.</p>
+                </div>
+                <div>
+                    <h4 class="mb-sm">Enlaces</h4>
+                    <ul
+                        style="color: var(--text-muted); font-size: 0.9rem; display: flex; flex-direction: column; gap: 0.5rem;">
+                        <li><a href="#">Inicio</a></li>
+                        <li><a href="#cursos">Cursos</a></li>
+                        <li><a href="#blog">Blog</a></li>
+                        <li><a href="#contacto">Contacto</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h4 class="mb-sm">Legal</h4>
+                    <ul
+                        style="color: var(--text-muted); font-size: 0.9rem; display: flex; flex-direction: column; gap: 0.5rem;">
+                        <li><a href="#">Términos y condiciones</a></li>
+                        <li><a href="#">Política de privacidad</a></li>
+                        <li><a href="#">Política de cookies</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h4 class="mb-sm">Contacto</h4>
+                    <p style="color: var(--text-muted); font-size: 0.9rem; margin-bottom: 1rem;">info@holandesnawar.com
+                    </p>
+                    <div style="display: flex; gap: 1rem;">
+                        <a href="#" style="font-size: 1.5rem;"><i class="fab fa-instagram"></i></a>
+                        <a href="#" style="font-size: 1.5rem;"><i class="fab fa-facebook"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 HOLANDÉS NAWAR. Todos los derechos reservados.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        function toggleMenu() {
+            const menu = document.getElementById('mobileMenu');
+            menu.classList.toggle('active');
+
+            if (menu.classList.contains('active')) {
+                document.body.style.overflow = 'hidden';
+            } else {
+                document.body.style.overflow = 'auto';
+            }
+        }
+
+        // Vanilla Tilt Effect
+        document.addEventListener('mousemove', (e) => {
+            document.querySelectorAll('.glass-panel').forEach(card => {
+                const rect = card.getBoundingClientRect();
+                const x = e.clientX - rect.left;
+                const y = e.clientY - rect.top;
+
+                // Only apply if mouse is near/over the card to save performance
+                if (x > -50 && x < rect.width + 50 && y > -50 && y < rect.height + 50) {
+                    const centerX = rect.width / 2;
+                    const centerY = rect.height / 2;
+
+                    const rotateX = ((y - centerY) / centerY) * -5; // Max rotation deg
+                    const rotateY = ((x - centerX) / centerX) * 5;
+
+                    card.style.transform = `perspective(1000px) rotateX(${rotateX}deg) rotateY(${rotateY}deg) scale3d(1.02, 1.02, 1.02)`;
+                } else {
+                    card.style.transform = 'perspective(1000px) rotateX(0) rotateY(0) scale3d(1, 1, 1)';
+                }
+            });
+        });
+    </script>
+
+</body>
+
+</html>
+```
