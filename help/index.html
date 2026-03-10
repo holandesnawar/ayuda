@@ -1,0 +1,504 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Centro de Ayuda — Holandés con Nawar</title>
+  <meta name="description"
+    content="Encuentra artículos, guías, recursos y respuestas para aprender neerlandés desde el español. Knowledge base oficial de Holandés con Nawar.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+  <link rel="stylesheet" href="assets/css/main.css">
+</head>
+
+<body>
+
+  <!-- Mobile Menu -->
+  <div class="mobile-menu" id="mobileMenu">
+    <div class="mobile-menu-header">
+      <div class="nav-logo">
+        <div class="nav-logo-icon">N</div>
+        <span class="mobile-logo-text">Nawar</span>
+      </div>
+      <div class="mobile-menu-close" id="mobileClose">
+        <i class="fas fa-times"></i>
+      </div>
+    </div>
+    <a href="categoria/gramatica/" class="mobile-nav-link" onclick="closeMobileMenu()">Gramática</a>
+    <a href="categoria/vocabulario/" class="mobile-nav-link" onclick="closeMobileMenu()">Vocabulario</a>
+    <a href="categoria/pronunciacion/" class="mobile-nav-link" onclick="closeMobileMenu()">Pronunciación</a>
+    <a href="categoria/recursos/" class="mobile-nav-link" onclick="closeMobileMenu()">Recursos</a>
+    <a href="blog/" class="mobile-nav-link" onclick="closeMobileMenu()">Blog</a>
+  </div>
+
+  <!-- NAVBAR -->
+  <nav class="navbar">
+    <div class="container navbar-inner">
+      <a href="index.html" class="nav-logo">
+        <div class="nav-logo-icon">N</div>
+        <span class="nav-logo-text">Nawar</span>
+      </a>
+
+      <ul class="nav-links">
+        <!-- Temas mega dropdown -->
+        <li class="nav-dropdown">
+          <a href="#" class="nav-link">Temas <i class="fas fa-chevron-down"></i></a>
+          <div class="nav-dropdown-menu mega-menu">
+            <div class="mega-menu-grid">
+              <div class="mega-col">
+                <div class="mega-col-title">Gramática</div>
+                <a href="categoria/gramatica/zijn-y-hebben/" class="mega-link">Zijn y Hebben</a>
+                <a href="categoria/gramatica/omdat-vs-want/" class="mega-link">Omdat vs Want</a>
+                <a href="articulo/de-vs-het/" class="mega-link">De vs Het</a>
+                <a href="articulo/niet-vs-geen/" class="mega-link">Niet vs Geen</a>
+                <a href="articulo/verbos-separables/" class="mega-link">Verbos separables</a>
+                <a href="articulo/orden-de-la-frase/" class="mega-link">Orden de la frase</a>
+              </div>
+              <div class="mega-col">
+                <div class="mega-col-title">Vocabulario</div>
+                <a href="categoria/vocabulario/supermercado/" class="mega-link">Supermercado</a>
+                <a href="categoria/vocabulario/farmacia/" class="mega-link">Farmacia</a>
+                <a href="articulo/familia-holandes/" class="mega-link">Familia</a>
+                <a href="#" class="mega-link">Trabajo</a>
+                <a href="#" class="mega-link">Transporte</a>
+                <a href="#" class="mega-link">Casa</a>
+                <a href="#" class="mega-link">Citas y médicos</a>
+                <a href="#" class="mega-link">Restaurante</a>
+              </div>
+              <div class="mega-col">
+                <div class="mega-col-title">Pronunciación</div>
+                <a href="articulo/pronunciacion-g-ch/" class="mega-link">G y CH</a>
+                <a href="articulo/pronunciacion-ui/" class="mega-link">UI</a>
+                <a href="#" class="mega-link">EI e IJ</a>
+                <a href="#" class="mega-link">Entonación básica</a>
+                <a href="#" class="mega-link">Verbos comunes</a>
+              </div>
+              <!-- Expresiones útiles -->
+              <div class="mega-col">
+                <div class="mega-col-title">Expresiones útiles</div>
+                <a href="#" class="mega-link">Frases del día a día</a>
+                <a href="#" class="mega-link">Saludos</a>
+                <a href="#" class="mega-link">Pedir ayuda</a>
+                <a href="#" class="mega-link">Conversaciones básicas</a>
+              </div>
+              <!-- Vida diaria en NL -->
+              <div class="mega-col">
+                <div class="mega-col-title">Vida diaria en NL</div>
+                <a href="#" class="mega-link">Trabajo en Países Bajos</a>
+                <a href="#" class="mega-link">Transporte público</a>
+                <a href="#" class="mega-link">Compras</a>
+                <a href="#" class="mega-link">Médicos y citas</a>
+                <a href="#" class="mega-link">Vivienda</a>
+              </div>
+              <!-- Recursos para alumnos -->
+              <div class="mega-col">
+                <div class="mega-col-title">Recursos para alumnos</div>
+                <a href="articulo/como-acceder-al-curso/" class="mega-link">Cómo acceder al curso</a>
+                <a href="#" class="mega-link">Nawar Community</a>
+                <a href="articulo/como-usar-flashcards/" class="mega-link">Cómo usar las flashcards</a>
+                <a href="#" class="mega-link">Cómo encontrar las lecciones</a>
+                <a href="#" class="mega-link">Soporte y preguntas frecuentes</a>
+              </div>
+            </div>
+          </div>
+        </li>
+        <!-- Recursos dropdown -->
+        <li class="nav-dropdown">
+          <a href="#" class="nav-link">Recursos <i class="fas fa-chevron-down"></i></a>
+          <div class="nav-dropdown-menu">
+            <a href="#" class="dropdown-item">Updates</a>
+            <a href="#" class="dropdown-item">Nawar Academy</a>
+            <a href="#" class="dropdown-item">Nawar Community</a>
+            <a href="#" class="dropdown-item">Nawar Events</a>
+            <a href="#" class="dropdown-item">Nawar Partners</a>
+          </div>
+        </li>
+      </ul>
+
+      <div class="nav-right">
+        <div class="nav-search-mini" id="miniSearch">
+          <i class="fas fa-search"></i>
+          <span>Buscar...</span>
+        </div>
+        <div class="nav-lang">🇪🇸 ES</div>
+        <a href="#" class="btn-login">Acceso alumnos</a>
+      </div>
+
+      <button class="nav-mobile-toggle" id="mobileToggle">
+        <i class="fas fa-bars"></i>
+      </button>
+    </div>
+  </nav>
+
+  <!-- HERO -->
+  <section class="hero">
+    <div class="container">
+      <div class="hero-inner">
+        <!-- Left content -->
+        <div class="hero-content">
+          <div class="hero-badge fade-up">
+            <i class="fas fa-circle-check"></i>
+            Base de conocimiento oficial
+          </div>
+          <h1 class="hero-title fade-up delay-1">
+            ¿En qué podemos<br><span>ayudarte hoy?</span>
+          </h1>
+          <p class="hero-subtitle fade-up delay-2">
+            Artículos, guías, recursos y respuestas para aprender neerlandés desde el español. Todo lo que necesitas, en
+            un solo lugar.
+          </p>
+
+          <!-- Big search bar -->
+          <div class="hero-search fade-up delay-3">
+            <div class="hero-search-inner">
+              <i class="fas fa-search hero-search-icon"></i>
+              <input type="text" class="hero-search-input" id="heroSearch"
+                placeholder="Busca un artículo, concepto o tema..." autocomplete="off">
+              <button class="hero-search-btn">Buscar</button>
+            </div>
+          </div>
+
+          <!-- Popular searches -->
+          <div class="hero-popular fade-up delay-4">
+            <span class="hero-popular-label">Búsquedas populares:</span>
+            <span class="popular-tag">zijn vs hebben</span>
+            <span class="popular-tag">omdat vs want</span>
+            <span class="popular-tag">vocabulario supermercado</span>
+            <span class="popular-tag">pronunciación G</span>
+            <span class="popular-tag">flashcards</span>
+          </div>
+        </div>
+
+        <!-- Right visual panel -->
+        <div class="hero-visual">
+          <div class="hero-panel">
+            <div class="panel-header">
+              <div class="panel-dots">
+                <div class="panel-dot"></div>
+                <div class="panel-dot"></div>
+                <div class="panel-dot"></div>
+              </div>
+              <span class="panel-title-bar">Centro de Ayuda · Nawar</span>
+            </div>
+            <!-- Artículo 1 -->
+            <a href="articulo/de-vs-het/" class="popular-card">
+              <div class="popular-card-content">
+                <span class="card-tag">Gramática</span>
+                <h4>De vs Het: Guía definitiva</h4>
+                <p>Aprende las reglas para saber cuándo usar cada artículo.</p>
+                <div class="card-footer">
+                  <span><i class="far fa-clock"></i> 6 min</span>
+                  <span class="card-link">Leer más <i class="fas fa-arrow-right"></i></span>
+                </div>
+              </div>
+            </a>
+
+            <!-- Artículo 2 -->
+            <a href="articulo/niet-vs-geen/" class="popular-card">
+              <div class="popular-card-content">
+                <span class="card-tag">Gramática</span>
+                <h4>Niet vs Geen: La negación</h4>
+                <p>Cómo y cuándo usar cada una de las negaciones en neerlandés.</p>
+                <div class="card-footer">
+                  <span><i class="far fa-clock"></i> 5 min</span>
+                  <span class="card-link">Leer más <i class="fas fa-arrow-right"></i></span>
+                </div>
+              </div>
+            </a>
+
+            <!-- Artículo 3 -->
+            <a href="articulo/verbos-separables/" class="popular-card">
+              <div class="popular-card-content">
+                <span class="card-tag">Gramática</span>
+                <h4>Verbos Separables</h4>
+                <p>Domina los verbos que se parten en dos en la frase.</p>
+                <div class="card-footer">
+                  <span><i class="far fa-clock"></i> 7 min</span>
+                  <span class="card-link">Leer más <i class="fas fa-arrow-right"></i></span>
+                </div>
+              </div>
+            </a>
+
+            <div class="panel-stat">
+              <div class="panel-stat-item">
+                <div class="num">48+</div>
+                <div class="label">Artículos</div>
+              </div>
+              <div class="panel-stat-item">
+                <div class="num">8</div>
+                <div class="label">Categorías</div>
+              </div>
+              <div class="panel-stat-badge">✓ Actualizado</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CATEGORIES SECTION -->
+  <section class="categories-section">
+    <div class="container">
+      <div class="section-header center fade-up">
+        <div class="section-label"><i class="fas fa-grid-2"></i> Explorar por tema</div>
+        <h2 class="section-title">Todos los temas</h2>
+        <p class="section-desc">Elige una categoría para explorar artículos, guías y recursos organizados por tema.</p>
+      </div>
+
+      <div class="categories-grid">
+
+        <!-- Gramática -->
+        <a href="categoria/gramatica/" class="category-card fade-up delay-1">
+          <div class="category-icon cat-blue">
+            <i class="fas fa-book-open"></i>
+          </div>
+          <div class="category-body">
+            <h3>Gramática</h3>
+            <p>Reglas gramaticales esenciales explicadas en español: zijn y hebben, verbos separables, orden de la frase
+              y mucho más.</p>
+          </div>
+          <div class="category-footer">
+            <span class="category-count">14 artículos</span>
+            <span class="category-arrow"><i class="fas fa-arrow-right"></i></span>
+          </div>
+        </a>
+
+        <!-- Vocabulario -->
+        <a href="categoria/vocabulario/" class="category-card fade-up delay-1">
+          <div class="category-icon cat-green">
+            <i class="fas fa-language"></i>
+          </div>
+          <div class="category-body">
+            <h3>Vocabulario</h3>
+            <p>Listas de palabras por tema: supermercado, farmacia, trabajo, transporte, casa, familia y situaciones
+              cotidianas.</p>
+          </div>
+          <div class="category-footer">
+            <span class="category-count">18 artículos</span>
+            <span class="category-arrow"><i class="fas fa-arrow-right"></i></span>
+          </div>
+        </a>
+
+        <!-- Pronunciación -->
+        <a href="categoria/pronunciacion/" class="category-card fade-up delay-2">
+          <div class="category-icon cat-violet">
+            <i class="fas fa-microphone-lines"></i>
+          </div>
+          <div class="category-body">
+            <h3>Pronunciación</h3>
+            <p>Domina los sonidos más difíciles del neerlandés: la G, UI, EI/IJ, la entonación y cómo pronunciar verbos
+              comunes.</p>
+          </div>
+          <div class="category-footer">
+            <span class="category-count">9 artículos</span>
+            <span class="category-arrow"><i class="fas fa-arrow-right"></i></span>
+          </div>
+        </a>
+
+        <!-- Expresiones -->
+        <a href="categoria/gramatica/" class="category-card fade-up delay-2">
+          <div class="category-icon cat-orange">
+            <i class="fas fa-comments"></i>
+          </div>
+          <div class="category-body">
+            <h3>Expresiones útiles</h3>
+            <p>Frases hechas, conectores del discurso y expresiones del día a día que no encontrarás en los libros de
+              texto.</p>
+          </div>
+          <div class="category-footer">
+            <span class="category-count">11 artículos</span>
+            <span class="category-arrow"><i class="fas fa-arrow-right"></i></span>
+          </div>
+        </a>
+
+        <!-- Vida diaria -->
+        <a href="categoria/vocabulario/" class="category-card fade-up delay-3">
+          <div class="category-icon cat-teal">
+            <i class="fas fa-house-chimney"></i>
+          </div>
+          <div class="category-body">
+            <h3>Vida diaria en NL</h3>
+            <p>Neerlandés práctico para situaciones reales: médico, banco, transporte público, trabajo y trámites
+              administrativos.</p>
+          </div>
+          <div class="category-footer">
+            <span class="category-count">8 artículos</span>
+            <span class="category-arrow"><i class="fas fa-arrow-right"></i></span>
+          </div>
+        </a>
+
+        <!-- Recursos -->
+        <a href="categoria/recursos/" class="category-card fade-up delay-3">
+          <div class="category-icon cat-pink">
+            <i class="fas fa-graduation-cap"></i>
+          </div>
+          <div class="category-body">
+            <h3>Recursos para alumnos</h3>
+            <p>Todo lo que necesitas para aprovechar el curso: cómo acceder, usar las flashcards, entrar en Circle y
+              más.</p>
+          </div>
+          <div class="category-footer">
+            <span class="category-count">6 artículos</span>
+            <span class="category-arrow"><i class="fas fa-arrow-right"></i></span>
+          </div>
+        </a>
+
+        <!-- Acceso y soporte -->
+        <a href="categoria/recursos/" class="category-card fade-up delay-4">
+          <div class="category-icon cat-yellow">
+            <i class="fas fa-headset"></i>
+          </div>
+          <div class="category-body">
+            <h3>Acceso y soporte</h3>
+            <p>¿Problemas técnicos? ¿No encuentras algo? Aquí están todas las respuestas sobre acceso, facturación y
+              soporte.</p>
+          </div>
+          <div class="category-footer">
+            <span class="category-count">5 artículos</span>
+            <span class="category-arrow"><i class="fas fa-arrow-right"></i></span>
+          </div>
+        </a>
+
+        <!-- Blog -->
+        <a href="blog/" class="category-card fade-up delay-4">
+          <div class="category-icon cat-red">
+            <i class="fas fa-pen-nib"></i>
+          </div>
+          <div class="category-body">
+            <h3>Blog educativo</h3>
+            <p>Artículos en profundidad, comparativas de gramática, curiosidades del idioma y guías para todos los
+              niveles.</p>
+          </div>
+          <div class="category-footer">
+            <span class="category-count">12 posts</span>
+            <span class="category-arrow"><i class="fas fa-arrow-right"></i></span>
+          </div>
+        </a>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- POPULAR ARTICLES STRIP -->
+  <section style="padding: 0 0 80px;">
+    <div class="container">
+      <div class="section-header fade-up">
+        <div class="section-label"><i class="fas fa-fire"></i> Más populares</div>
+        <h2 class="section-title">Artículos más leídos</h2>
+      </div>
+      <div class="article-list fade-up delay-1">
+        <a href="articulo/diferencia-zijn-hebben/" class="article-list-item">
+          <div class="article-list-icon"><i class="fas fa-book-open"></i></div>
+          <div class="article-list-body">
+            <h4>La diferencia entre zijn y hebben — Guía completa con ejemplos</h4>
+            <p>Cuándo usar ser/estar y cuándo usar haber/tener en neerlandés. Reglas y excepciones.</p>
+          </div>
+          <span class="article-list-arrow"><i class="fas fa-arrow-right"></i></span>
+        </a>
+        <a href="articulo/omdat-vs-want/" class="article-list-item">
+          <div class="article-list-icon"><i class="fas fa-link"></i></div>
+          <div class="article-list-body">
+            <h4>Omdat vs Want — ¿Qué diferencia hay y cuándo usar cada uno?</h4>
+            <p>Las dos formas de decir "porque" en neerlandés no son intercambiables. Aprende a usarlas bien.</p>
+          </div>
+          <span class="article-list-arrow"><i class="fas fa-arrow-right"></i></span>
+        </a>
+        <a href="articulo/vocabulario-supermercado/" class="article-list-item">
+          <div class="article-list-icon"><i class="fas fa-cart-shopping"></i></div>
+          <div class="article-list-body">
+            <h4>Vocabulario del supermercado en neerlandés — 60+ palabras esenciales</h4>
+            <p>Frutas, verduras, lácteos, carnes y más. Con pronunciación y frases útiles para hacer la compra.</p>
+          </div>
+          <span class="article-list-arrow"><i class="fas fa-arrow-right"></i></span>
+        </a>
+        <a href="articulo/vocabulario-farmacia/" class="article-list-item">
+          <div class="article-list-icon"><i class="fas fa-pills"></i></div>
+          <div class="article-list-body">
+            <h4>Vocabulario de la farmacia — Cómo pedir medicamentos en neerlandés</h4>
+            <p>Todo lo que necesitas saber para ir a la apotheek: síntomas, medicamentos y preguntas esenciales.</p>
+          </div>
+          <span class="article-list-arrow"><i class="fas fa-arrow-right"></i></span>
+        </a>
+        <a href="articulo/como-acceder-al-curso/" class="article-list-item">
+          <div class="article-list-icon"><i class="fas fa-key"></i></div>
+          <div class="article-list-body">
+            <h4>Cómo acceder al curso de Holandés con Nawar</h4>
+            <p>Paso a paso: desde la compra hasta entrar en la plataforma y encontrar tus lecciones.</p>
+          </div>
+          <span class="article-list-arrow"><i class="fas fa-arrow-right"></i></span>
+        </a>
+        <a href="articulo/como-usar-flashcards/" class="article-list-item">
+          <div class="article-list-icon"><i class="fas fa-bolt"></i></div>
+          <div class="article-list-body">
+            <h4>Cómo aprovechar al máximo las flashcards del curso</h4>
+            <p>Consejos y estrategias de repetición espaciada para memorizar vocabulario de forma efectiva.</p>
+          </div>
+          <span class="article-list-arrow"><i class="fas fa-arrow-right"></i></span>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer>
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <div class="nav-logo" style="margin-bottom: 12px;">
+            <div class="nav-logo-icon">N</div>
+            <span class="nav-logo-text">Nawar</span>
+          </div>
+          <p>El centro de ayuda oficial para alumnos e interesados en aprender neerlandés desde el español.</p>
+          <div class="footer-social">
+            <a href="#"><i class="fab fa-instagram"></i></a>
+            <a href="#"><i class="fab fa-tiktok"></i></a>
+            <a href="#"><i class="fab fa-youtube"></i></a>
+          </div>
+        </div>
+        <div class="footer-col">
+          <h5>Temas</h5>
+          <ul>
+            <li><a href="categoria/gramatica/">Gramática</a></li>
+            <li><a href="categoria/vocabulario/">Vocabulario</a></li>
+            <li><a href="categoria/pronunciacion/">Pronunciación</a></li>
+            <li><a href="categoria/recursos/">Recursos</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h5>Contenido</h5>
+          <ul>
+            <li><a href="blog/">Blog</a></li>
+            <li><a href="articulo/diferencia-zijn-hebben/">Zijn vs Hebben</a></li>
+            <li><a href="articulo/omdat-vs-want/">Omdat vs Want</a></li>
+            <li><a href="articulo/vocabulario-supermercado/">Vocabulario</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h5>Ayuda</h5>
+          <ul>
+            <li><a href="articulo/como-acceder-al-curso/">Acceso al curso</a></li>
+            <li><a href="articulo/como-usar-flashcards/">Flashcards</a></li>
+            <li><a href="#">Soporte</a></li>
+            <li><a href="#">Contacto</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <span>© 2026 Nawar. Todos los derechos reservados.</span>
+        <span style="display:flex; gap: 20px;">
+          <a href="#">Privacidad</a>
+          <a href="#">Términos</a>
+          <a href="#">Cookies</a>
+        </span>
+      </div>
+    </div>
+  </footer>
+
+  <script src="assets/js/main.js"></script>
+</body>
+
+</html>
