@@ -2,513 +2,503 @@
 <html lang="es">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Holandés con Nawar | La última formación de neerlandés que comprarás</title>
-    <meta name="description"
-        content="Academia online de neerlandés para hispanohablantes. Domina el idioma real para vivir, trabajar y estudiar en Países Bajos.">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Centro de Ayuda — Holandés con Nawar</title>
+  <meta name="description"
+    content="Encuentra artículos, guías, recursos y respuestas para aprender neerlandés desde el español. Knowledge base oficial de Holandés con Nawar.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+  <link rel="stylesheet" href="assets/css/main.css">
 </head>
 
 <body>
 
-    <!-- Floating Background Orbs -->
-    <div class="orb orb-1"></div>
-    <div class="orb orb-2"></div>
-
-    <!-- Mobile Menu Overlay -->
-    <div class="mobile-menu-overlay" id="mobileMenu">
-        <a href="#" class="mobile-nav-link" onclick="toggleMenu()">Inicio</a>
-        <a href="#cursos" class="mobile-nav-link" onclick="toggleMenu()">Cursos</a>
-        <a href="#blog" class="mobile-nav-link" onclick="toggleMenu()">Blog</a>
-        <a href="#contacto" class="mobile-nav-link" onclick="toggleMenu()">Contacto</a>
-        <div style="display: flex; flex-direction: column; gap: 1rem; margin-top: 2rem;">
-            <a href="#" class="btn btn-secondary" onclick="toggleMenu()">Acceso alumnos</a>
-            <a href="#cursos" class="btn btn-primary" onclick="toggleMenu()">Apúntate</a>
-        </div>
-        <button class="mobile-menu-btn" onclick="toggleMenu()" style="position: absolute; top: 2rem; right: 2rem;">
-            <i class="fas fa-times"></i>
-        </button>
+  <!-- Mobile Menu -->
+  <div class="mobile-menu" id="mobileMenu">
+    <div class="mobile-menu-header">
+      <div class="nav-logo">
+        <div class="nav-logo-icon">N</div>
+        <span class="mobile-logo-text">Nawar</span>
+      </div>
+      <div class="mobile-menu-close" id="mobileClose">
+        <i class="fas fa-times"></i>
+      </div>
     </div>
+    <a href="categoria/gramatica/index.html" class="mobile-nav-link" onclick="closeMobileMenu()">Gramática</a>
+    <a href="categoria/vocabulario/index.html" class="mobile-nav-link" onclick="closeMobileMenu()">Vocabulario</a>
+    <a href="categoria/pronunciacion/index.html" class="mobile-nav-link" onclick="closeMobileMenu()">Pronunciación</a>
+    <a href="categoria/recursos/index.html" class="mobile-nav-link" onclick="closeMobileMenu()">Recursos</a>
+    <a href="blog/index.html" class="mobile-nav-link" onclick="closeMobileMenu()">Blog</a>
+  </div>
 
-    <!-- Fixed Navbar Wrapper (Apple Style) -->
-    <div class="navbar-fixed-wrapper">
-        <nav class="nav-pill">
-            <div class="logo">NAWAR</div>
+  <!-- NAVBAR -->
+  <nav class="navbar">
+    <div class="container navbar-inner">
+      <a href="index.html" class="nav-logo">
+        <div class="nav-logo-icon">N</div>
+        <span class="nav-logo-text">Nawar</span>
+      </a>
 
-            <ul class="nav-links">
-                <li><a href="#" class="nav-link">Inicio</a></li>
-                <li><a href="#cursos" class="nav-link">Cursos</a></li>
-                <li><a href="#blog" class="nav-link">Blog</a></li>
-                <li><a href="#contacto" class="nav-link">Contacto</a></li>
-            </ul>
-
-            <div class="nav-actions">
-                <a href="#" class="btn btn-secondary">Acceso alumnos</a>
-                <a href="#cursos" class="btn btn-primary">Apúntate</a>
+      <ul class="nav-links">
+        <!-- Temas mega dropdown -->
+        <li class="nav-dropdown">
+          <a href="#" class="nav-link">Temas <i class="fas fa-chevron-down"></i></a>
+          <div class="nav-dropdown-menu mega-menu">
+            <div class="mega-menu-grid">
+              <div class="mega-col">
+                <a href="categoria/gramatica/index.html" class="mega-link">Gramática</a>
+                <a href="categoria/gramatica/zijn-y-hebben/index.html" class="mega-link">Zijn y Hebben</a>
+                <a href="categoria/gramatica/omdat-vs-want/index.html" class="mega-link">Omdat vs Want</a>
+                <a href="articulo/de-vs-het/index.html" class="mega-link">De vs Het</a>
+                <a href="articulo/niet-vs-geen/index.html" class="mega-link">Niet vs Geen</a>
+                <a href="articulo/verbos-separables/index.html" class="mega-link">Verbos separables</a>
+                <a href="articulo/orden-de-la-frase/index.html" class="mega-link">Orden de la frase</a>
+              </div>
+              <div class="mega-col">
+                <div class="mega-col-title">Vocabulario</div>
+                <a href="categoria/vocabulario/supermercado/index.html" class="mega-link">Supermercado</a>
+                <a href="categoria/vocabulario/farmacia/index.html" class="mega-link">Farmacia</a>
+                <a href="articulo/familia-holandes/index.html" class="mega-link">Familia</a>
+                <a href="#" class="mega-link">Trabajo</a>
+                <a href="#" class="mega-link">Transporte</a>
+                <a href="#" class="mega-link">Casa</a>
+                <a href="#" class="mega-link">Citas y médicos</a>
+                <a href="#" class="mega-link">Restaurante</a>
+              </div>
+              <div class="mega-col">
+                <div class="mega-col-title">Pronunciación</div>
+                <a href="articulo/pronunciacion-g-ch/index.html" class="mega-link">G y CH</a>
+                <a href="articulo/pronunciacion-ui/index.html" class="mega-link">UI</a>
+                <a href="#" class="mega-link">EI e IJ</a>
+                <a href="#" class="mega-link">Entonación básica</a>
+                <a href="#" class="mega-link">Verbos comunes</a>
+              </div>
+              <!-- Expresiones útiles -->
+              <div class="mega-col">
+                <div class="mega-col-title">Expresiones útiles</div>
+                <a href="#" class="mega-link">Frases del día a día</a>
+                <a href="#" class="mega-link">Saludos</a>
+                <a href="#" class="mega-link">Pedir ayuda</a>
+                <a href="#" class="mega-link">Conversaciones básicas</a>
+              </div>
+              <!-- Vida diaria en NL -->
+              <div class="mega-col">
+                <div class="mega-col-title">Vida diaria en NL</div>
+                <a href="#" class="mega-link">Trabajo en Países Bajos</a>
+                <a href="#" class="mega-link">Transporte público</a>
+                <a href="#" class="mega-link">Compras</a>
+                <a href="#" class="mega-link">Médicos y citas</a>
+                <a href="#" class="mega-link">Vivienda</a>
+              </div>
+              <!-- Recursos para alumnos -->
+              <div class="mega-col">
+                <div class="mega-col-title">Recursos para alumnos</div>
+                <a href="articulo/como-acceder-al-curso/index.html" class="mega-link">Cómo acceder al curso</a>
+                <a href="#" class="mega-link">Nawar Community</a>
+                <a href="articulo/como-usar-flashcards/index.html" class="mega-link">Cómo usar las flashcards</a>
+                <a href="#" class="mega-link">Cómo encontrar las lecciones</a>
+                <a href="#" class="mega-link">Soporte y preguntas frecuentes</a>
+              </div>
             </div>
+          </div>
+        </li>
+        <!-- Recursos dropdown -->
+        <li class="nav-dropdown">
+          <a href="#" class="nav-link">Recursos <i class="fas fa-chevron-down"></i></a>
+          <div class="nav-dropdown-menu">
+            <a href="#" class="dropdown-item">Updates</a>
+            <a href="#" class="dropdown-item">Nawar Academy</a>
+            <a href="#" class="dropdown-item">Nawar Community</a>
+            <a href="#" class="dropdown-item">Nawar Events</a>
+            <a href="#" class="dropdown-item">Nawar Partners</a>
+          </div>
+        </li>
+      </ul>
 
-            <button class="mobile-menu-btn" onclick="toggleMenu()">
-                <i class="fas fa-bars"></i>
-            </button>
-        </nav>
+      <div class="nav-right">
+        <div class="nav-search-mini" id="miniSearch">
+          <i class="fas fa-search"></i>
+          <span>Buscar...</span>
+        </div>
+        <div class="nav-lang">🇪🇸 ES</div>
+        <a href="#" class="btn-login">Acceso alumnos</a>
+      </div>
+
+      <button class="nav-mobile-toggle" id="mobileToggle">
+        <i class="fas fa-bars"></i>
+      </button>
     </div>
+  </nav>
 
-    <!-- Hero Section -->
-    <header class="hero">
-        <div class="container hero-content">
-            <div class="hero-text animate-fade-up">
-                <h1>La última formación de neerlandés que comprarás en toda tu vida.</h1>
-                <p class="hero-subtitle delay-100">La migración a Países Bajos es una realidad. Súmate a los miles de
-                    hispanohablantes que ya dominan el neerlandés y abren nuevas oportunidades.</p>
+  <!-- HERO -->
+  <section class="hero">
+    <div class="container">
+      <div class="hero-inner">
+        <!-- Left content -->
+        <div class="hero-content">
+          <div class="hero-badge fade-up">
+            <i class="fas fa-circle-check"></i>
+            Base de conocimiento oficial
+          </div>
+          <h1 class="hero-title fade-up delay-1">
+            ¿En qué podemos<br><span>ayudarte hoy?</span>
+          </h1>
+          <p class="hero-subtitle fade-up delay-2">
+            Artículos, guías, recursos y respuestas para aprender neerlandés desde el español. Todo lo que necesitas, en
+            un solo lugar.
+          </p>
 
-                <div class="hero-actions delay-200">
-                    <a href="#curso-principal" class="btn btn-primary">Quiero aprender neerlandés</a>
-                    <a href="#cursos" class="btn btn-secondary">Ver todos los cursos</a>
-                </div>
-
-                <div class="hero-benefits delay-300">
-                    <div class="benefit-item">
-                        <i class="fas fa-check-circle benefit-icon"></i>
-                        <span>Aprueba tus exámenes de integración</span>
-                    </div>
-                    <div class="benefit-item">
-                        <i class="fas fa-check-circle benefit-icon"></i>
-                        <span>Consigue mejores oportunidades laborales</span>
-                    </div>
-                    <div class="benefit-item">
-                        <i class="fas fa-check-circle benefit-icon"></i>
-                        <span>Intégrate en el día a día sin miedo</span>
-                    </div>
-                </div>
+          <!-- Big search bar -->
+          <div class="hero-search fade-up delay-3">
+            <div class="hero-search-inner">
+              <i class="fas fa-search hero-search-icon"></i>
+              <input type="text" class="hero-search-input" id="heroSearch"
+                placeholder="Busca un artículo, concepto o tema..." autocomplete="off">
+              <button class="hero-search-btn">Buscar</button>
             </div>
+          </div>
 
-            <div class="hero-visual animate-fade-up delay-200">
-                <div class="hero-3d-platform">
-                    <div class="platform-base"></div>
-                    <div class="platform-layer-1"></div>
-                    <div class="platform-card-float">
-                        <h4>Alumnos Activos</h4>
-                        <div class="stat">+2.4k</div>
-                    </div>
-                    <!-- Additional floating element -->
-                    <div class="platform-card-float"
-                        style="top: 60%; right: auto; left: -5%; width: 180px; transform: translateZ(60px);">
-                        <h4>Tasa de Éxito</h4>
-                        <div class="stat">98%</div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </header>
-
-    <!-- Identification Section -->
-    <section class="identification">
-        <div class="container">
-            <div class="text-center animate-fade-up">
-                <h2 class="mb-md">Somos lo que buscas si...</h2>
-            </div>
-            <div class="id-grid">
-                <div class="glass-panel id-card animate-fade-up delay-100">
-                    <div style="display: flex; align-items: start;">
-                        <i class="fas fa-check check-icon"></i>
-                        <p>Quieres aprender neerlandés desde casa, a tu ritmo y sin horarios fijos.</p>
-                    </div>
-                </div>
-                <div class="glass-panel id-card animate-fade-up delay-200">
-                    <div style="display: flex; align-items: start;">
-                        <i class="fas fa-check check-icon"></i>
-                        <p>Necesitas combinar trabajo, familia y estudio sin volverte loco.</p>
-                    </div>
-                </div>
-                <div class="glass-panel id-card animate-fade-up delay-300">
-                    <div style="display: flex; align-items: start;">
-                        <i class="fas fa-check check-icon"></i>
-                        <p>Quieres entender el neerlandés de la calle, no solo el de los libros de texto.</p>
-                    </div>
-                </div>
-                <div class="glass-panel id-card animate-fade-up delay-300">
-                    <div style="display: flex; align-items: start;">
-                        <i class="fas fa-check check-icon"></i>
-                        <p>Necesitas apoyo real para exámenes oficiales y trámites de visa/integración.</p>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Target Audience Section -->
-    <section class="audience">
-        <div class="container">
-            <div class="text-center">
-                <h2 class="mb-lg">¿Para quién está diseñado nuestro método?</h2>
-            </div>
-            <div class="audience-grid">
-                <div class="glass-panel audience-card">
-                    <div class="audience-icon"><i class="fas fa-home"></i></div>
-                    <h3>Residentes en NL</h3>
-                    <p>Ya vives aquí pero te cuesta integrarte. Empieza a entender las noticias, habla con tus vecinos y
-                        siéntete parte de la sociedad.</p>
-                </div>
-                <div class="glass-panel audience-card">
-                    <div class="audience-icon"><i class="fas fa-plane-arrival"></i></div>
-                    <h3>Nueva Vida</h3>
-                    <p>¿Planeas mudarte? Llega con una base sólida para no depender solo del inglés y acelerar tu
-                        adaptación desde el día uno.</p>
-                </div>
-                <div class="glass-panel audience-card">
-                    <div class="audience-icon"><i class="fas fa-briefcase"></i></div>
-                    <h3>Profesionales</h3>
-                    <p>Mejora tu puesto, comunícate con clientes y accede a oportunidades laborales que requieren el
-                        idioma local.</p>
-                </div>
-                <div class="glass-panel audience-card">
-                    <div class="audience-icon"><i class="fas fa-graduation-cap"></i></div>
-                    <h3>Formación</h3>
-                    <p>Accede a universidades o MBO/HBO. Aprueba tus exámenes y entiende las clases y trabajos sin
-                        estrés.</p>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Methodology Section -->
-    <section class="methodology">
-        <div class="container">
-            <div class="text-center">
-                <h2 class="mb-md">Cómo funciona el método Holandés con Nawar</h2>
-                <p style="color: var(--text-muted); max-width: 600px; margin: 0 auto;">Un sistema paso a paso pensado
-                    exclusivamente para hispanohablantes.</p>
-            </div>
-            <div class="method-steps">
-                <div class="step-card">
-                    <div class="step-number">01</div>
-                    <h3 class="step-title">Estructura Clara</h3>
-                    <p style="color: var(--text-muted); font-size: 0.9rem;">Curso por módulos y niveles (A0–A1 base)
-                        para avanzar sin perderte.</p>
-                </div>
-                <div class="step-card">
-                    <div class="step-number">02</div>
-                    <h3 class="step-title">Vídeos Bilingües</h3>
-                    <p style="color: var(--text-muted); font-size: 0.9rem;">Explicaciones en español y neerlandés para
-                        que entiendas cada matiz.</p>
-                </div>
-                <div class="step-card">
-                    <div class="step-number">03</div>
-                    <h3 class="step-title">Práctica Real</h3>
-                    <p style="color: var(--text-muted); font-size: 0.9rem;">Ejercicios, vocabulario por temas y
-                        gramática esencial aplicada.</p>
-                </div>
-                <div class="step-card">
-                    <div class="step-number">04</div>
-                    <h3 class="step-title">Soporte Total</h3>
-                    <p style="color: var(--text-muted); font-size: 0.9rem;">Sesiones de dudas y comunidad para que nunca
-                        te sientas solo.</p>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Product Spotlight (A0-A1) -->
-    <section class="spotlight" id="curso-principal">
-        <div class="container">
-            <div class="spotlight-card">
-                <div class="spotlight-glow"></div>
-                <span
-                    style="color: var(--accent-orange); font-weight: 600; letter-spacing: 1px; text-transform: uppercase; font-size: 0.9rem;">Producto
-                    Estrella</span>
-                <h2 class="mb-md" style="margin-top: 1rem;">Tu primer gran paso: de 0 a A1 con el Método Holandés con
-                    Nawar</h2>
-
-                <div class="spotlight-features">
-                    <div class="spotlight-feature">
-                        <i class="fas fa-video text-orange"></i>
-                        <span>Horas de contenido en vídeo de alta calidad</span>
-                    </div>
-                    <div class="spotlight-feature">
-                        <i class="fas fa-infinity text-orange"></i>
-                        <span>Acceso de por vida al curso</span>
-                    </div>
-                    <div class="spotlight-feature">
-                        <i class="fas fa-sync text-orange"></i>
-                        <span>Actualizaciones futuras incluidas</span>
-                    </div>
-                    <div class="spotlight-feature">
-                        <i class="fas fa-users text-orange"></i>
-                        <span>Acceso a soporte y comunidad privada</span>
-                    </div>
-                </div>
-
-                <div
-                    style="background: rgba(255,255,255,0.05); padding: 1.5rem; border-radius: 12px; margin-bottom: 2rem; text-align: left;">
-                    <h4 style="margin-bottom: 1rem;">Lo que conseguirás:</h4>
-                    <ul style="display: grid; grid-template-columns: 1fr 1fr; gap: 1rem; list-style: none;">
-                        <li style="display: flex; gap: 0.5rem;"><i class="fas fa-check text-orange"></i> Poder
-                            presentarte a exámenes iniciales</li>
-                        <li style="display: flex; gap: 0.5rem;"><i class="fas fa-check text-orange"></i> Entender
-                            conversaciones básicas</li>
-                        <li style="display: flex; gap: 0.5rem;"><i class="fas fa-check text-orange"></i> Sentirte seguro
-                            en trámites</li>
-                        <li style="display: flex; gap: 0.5rem;"><i class="fas fa-check text-orange"></i> Perder el miedo
-                            a hablar</li>
-                    </ul>
-                </div>
-
-                <a href="#" class="btn btn-primary" style="font-size: 1.2rem; padding: 1rem 2.5rem;">Ver todo lo que
-                    incluye el curso A0–A1</a>
-            </div>
-        </div>
-    </section>
-
-    <!-- Testimonials -->
-    <section class="testimonials">
-        <div class="container">
-            <div class="text-center">
-                <h2 class="mb-lg">Lo que dicen nuestros alumnos</h2>
-            </div>
-            <div class="testimonial-grid">
-                <div class="glass-panel testimonial-card">
-                    <div class="stars">
-                        <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i
-                            class="fas fa-star"></i><i class="fas fa-star"></i>
-                    </div>
-                    <p class="quote">"Gracias al método de Nawar aprobé mi examen de integración a la primera. Las
-                        explicaciones en español marcan la diferencia."</p>
-                    <p class="author">- María G., España</p>
-                </div>
-                <div class="glass-panel testimonial-card">
-                    <div class="stars">
-                        <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i
-                            class="fas fa-star"></i><i class="fas fa-star"></i>
-                    </div>
-                    <p class="quote">"Conseguí mi primer trabajo en una empresa holandesa. Ahora entiendo las bromas en
-                        la oficina y me siento uno más."</p>
-                    <p class="author">- Carlos R., Colombia</p>
-                </div>
-                <div class="glass-panel testimonial-card">
-                    <div class="stars">
-                        <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i
-                            class="fas fa-star"></i><i class="fas fa-star"></i>
-                    </div>
-                    <p class="quote">"Llevaba años intentando aprender con apps y libros, pero solo con este curso
-                        entendí la gramática real. 100% recomendado."</p>
-                    <p class="author">- Ana P., México</p>
-                </div>
-            </div>
-            <div class="text-center">
-                <div class="social-proof-line">
-                    <i class="fab fa-instagram text-orange"></i>
-                    <span style="margin-left: 0.5rem;">Cada semana, miles de hispanohablantes mejoran su neerlandés con
-                        nosotros en <strong>@holandes.nawar</strong></span>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Free Resources & Lead Magnet -->
-    <section class="resources container">
-        <!-- Free Content -->
-        <div class="glass-panel" style="padding: 3rem;">
-            <h3 class="mb-sm">Aprende gratis cada día</h3>
-            <p class="mb-md" style="color: var(--text-muted);">No tienes por qué gastar para empezar. Descubre nuestros
-                recursos gratuitos.</p>
-
-            <div style="margin-bottom: 2rem;">
-                <div style="margin-bottom: 1rem;">
-                    <h4 style="margin-bottom: 0.5rem;"><i class="fas fa-pen-fancy text-orange"></i> Blog Educativo</h4>
-                    <p style="font-size: 0.9rem; color: var(--text-muted);">Artículos prácticos sobre gramática, cultura
-                        y vida en NL.</p>
-                </div>
-                <div>
-                    <h4 style="margin-bottom: 0.5rem;"><i class="fab fa-instagram text-orange"></i> Instagram</h4>
-                    <p style="font-size: 0.9rem; color: var(--text-muted);">Consejos diarios, quizzes y mini-clases en
-                        @holandes.nawar.</p>
-                </div>
-            </div>
-
-            <div style="display: flex; gap: 1rem; flex-wrap: wrap;">
-                <a href="#blog" class="btn btn-secondary">Ver últimos artículos</a>
-                <a href="#" class="btn btn-secondary"><i class="fab fa-instagram"></i> Seguir en Instagram</a>
-            </div>
+          <!-- Popular searches -->
+          <div class="hero-popular fade-up delay-4">
+            <span class="hero-popular-label">Búsquedas populares:</span>
+            <span class="popular-tag">zijn vs hebben</span>
+            <span class="popular-tag">omdat vs want</span>
+            <span class="popular-tag">vocabulario supermercado</span>
+            <span class="popular-tag">pronunciación G</span>
+            <span class="popular-tag">flashcards</span>
+          </div>
         </div>
 
-        <!-- Lead Magnet -->
-        <div class="lead-magnet">
-            <h3>🎁 Guía Gratuita</h3>
-            <p><strong>Las diferencias entre 'zijn' y 'hebben' explicadas para hispanohablantes.</strong></p>
-            <ul>
-                <li><i class="fas fa-check-circle"></i> Deja de confundir los verbos más importantes.</li>
-                <li><i class="fas fa-check-circle"></i> Ejemplos prácticos de la vida real.</li>
-                <li><i class="fas fa-check-circle"></i> Explicación directa en español.</li>
-            </ul>
-            <form class="magnet-form" onsubmit="event.preventDefault();">
-                <input type="email" placeholder="Tu mejor email" class="magnet-input" required>
-                <div style="font-size: 0.8rem; opacity: 0.8;">
-                    <input type="checkbox" required> Acepto la política de privacidad.
+        <!-- Right visual panel -->
+        <div class="hero-visual">
+          <div class="hero-panel">
+            <div class="panel-header">
+              <div class="panel-dots">
+                <div class="panel-dot"></div>
+                <div class="panel-dot"></div>
+                <div class="panel-dot"></div>
+              </div>
+              <span class="panel-title-bar">Centro de Ayuda · Nawar</span>
+            </div>
+            <!-- Artículo 1 -->
+            <a href="articulo/de-vs-het/index.html" class="popular-card">
+              <div class="popular-card-content">
+                <span class="card-tag">Gramática</span>
+                <h4>De vs Het: Guía definitiva</h4>
+                <p>Aprende las reglas para saber cuándo usar cada artículo.</p>
+                <div class="card-footer">
+                  <span><i class="far fa-clock"></i> 6 min</span>
+                  <span class="card-link">Leer más <i class="fas fa-arrow-right"></i></span>
                 </div>
-                <button type="submit" class="btn btn-dark">Quiero mi guía gratis</button>
-            </form>
+              </div>
+            </a>
+
+            <!-- Artículo 2 -->
+            <a href="articulo/niet-vs-geen/index.html" class="popular-card">
+              <div class="popular-card-content">
+                <span class="card-tag">Gramática</span>
+                <h4>Niet vs Geen: La negación</h4>
+                <p>Cómo y cuándo usar cada una de las negaciones en neerlandés.</p>
+                <div class="card-footer">
+                  <span><i class="far fa-clock"></i> 5 min</span>
+                  <span class="card-link">Leer más <i class="fas fa-arrow-right"></i></span>
+                </div>
+              </div>
+            </a>
+
+            <!-- Artículo 3 -->
+            <a href="articulo/verbos-separables/index.html" class="popular-card">
+              <div class="popular-card-content">
+                <span class="card-tag">Gramática</span>
+                <h4>Verbos Separables</h4>
+                <p>Domina los verbos que se parten en dos en la frase.</p>
+                <div class="card-footer">
+                  <span><i class="far fa-clock"></i> 7 min</span>
+                  <span class="card-link">Leer más <i class="fas fa-arrow-right"></i></span>
+                </div>
+              </div>
+            </a>
+
+            <div class="panel-stat">
+              <div class="panel-stat-item">
+                <div class="num">48+</div>
+                <div class="label">Artículos</div>
+              </div>
+              <div class="panel-stat-item">
+                <div class="num">8</div>
+                <div class="label">Categorías</div>
+              </div>
+              <div class="panel-stat-badge">✓ Actualizado</div>
+            </div>
+          </div>
         </div>
-    </section>
+      </div>
+    </div>
+  </section>
 
-    <!-- FAQ -->
-    <section class="faq">
-        <div class="container">
-            <div class="text-center">
-                <h2 class="mb-lg">Preguntas Frecuentes</h2>
-            </div>
+  <!-- CATEGORIES SECTION -->
+  <section class="categories-section">
+    <div class="container">
+      <div class="section-header center fade-up">
+        <div class="section-label"><i class="fas fa-grid-2"></i> Explorar por tema</div>
+        <h2 class="section-title">Todos los temas</h2>
+        <p class="section-desc">Elige una categoría para explorar artículos, guías y recursos organizados por tema.</p>
+      </div>
 
-            <div class="faq-item">
-                <div class="faq-question">
-                    ¿Por qué aprender neerlandés si ya hablo inglés?
-                    <i class="fas fa-chevron-down text-orange"></i>
-                </div>
-                <div class="faq-answer">
-                    Aunque muchos hablan inglés, el neerlandés es la clave para la verdadera integración, mejores
-                    trabajos y conectar con la cultura local.
-                </div>
-            </div>
+      <div class="categories-grid">
 
-            <div class="faq-item">
-                <div class="faq-question">
-                    ¿Necesito experiencia previa con idiomas?
-                    <i class="fas fa-chevron-down text-orange"></i>
-                </div>
-                <div class="faq-answer">
-                    No. Nuestro método A0 empieza desde lo más básico, asumiendo que es tu primer contacto con el
-                    idioma.
-                </div>
-            </div>
+        <!-- Gramática -->
+        <a href="categoria/gramatica/index.html" class="category-card fade-up delay-1">
+          <div class="category-icon cat-blue">
+            <i class="fas fa-book-open"></i>
+          </div>
+          <div class="category-body">
+            <h3>Gramática</h3>
+            <p>Reglas gramaticales esenciales explicadas en español: zijn y hebben, verbos separables, orden de la frase
+              y mucho más.</p>
+          </div>
+          <div class="category-footer">
+            <span class="category-count">14 artículos</span>
+            <span class="category-arrow"><i class="fas fa-arrow-right"></i></span>
+          </div>
+        </a>
 
-            <div class="faq-item">
-                <div class="faq-question">
-                    ¿Puedo estudiar a mi ritmo?
-                    <i class="fas fa-chevron-down text-orange"></i>
-                </div>
-                <div class="faq-answer">
-                    Sí, el acceso es de por vida y 100% online. Tú decides cuándo y dónde estudiar.
-                </div>
-            </div>
+        <!-- Vocabulario -->
+        <a href="categoria/vocabulario/index.html" class="category-card fade-up delay-1">
+          <div class="category-icon cat-green">
+            <i class="fas fa-language"></i>
+          </div>
+          <div class="category-body">
+            <h3>Vocabulario</h3>
+            <p>Listas de palabras por tema: supermercado, farmacia, trabajo, transporte, casa, familia y situaciones
+              cotidianas.</p>
+          </div>
+          <div class="category-footer">
+            <span class="category-count">18 artículos</span>
+            <span class="category-arrow"><i class="fas fa-arrow-right"></i></span>
+          </div>
+        </a>
 
-            <div class="faq-item">
-                <div class="faq-question">
-                    ¿Qué soporte tendré si me atasco?
-                    <i class="fas fa-chevron-down text-orange"></i>
-                </div>
-                <div class="faq-answer">
-                    Tendrás acceso a nuestra comunidad de alumnos y soporte directo para resolver cualquier duda que te
-                    surja.
-                </div>
-            </div>
+        <!-- Pronunciación -->
+        <a href="categoria/pronunciacion/index.html" class="category-card fade-up delay-2">
+          <div class="category-icon cat-violet">
+            <i class="fas fa-microphone-lines"></i>
+          </div>
+          <div class="category-body">
+            <h3>Pronunciación</h3>
+            <p>Domina los sonidos más difíciles del neerlandés: la G, UI, EI/IJ, la entonación y cómo pronunciar verbos
+              comunes.</p>
+          </div>
+          <div class="category-footer">
+            <span class="category-count">9 artículos</span>
+            <span class="category-arrow"><i class="fas fa-arrow-right"></i></span>
+          </div>
+        </a>
 
-            <div class="faq-item">
-                <div class="faq-question">
-                    ¿En qué se diferencia esta academia de otras?
-                    <i class="fas fa-chevron-down text-orange"></i>
-                </div>
-                <div class="faq-answer">
-                    Nos especializamos exclusivamente en hispanohablantes. Conocemos tus errores comunes y te explicamos
-                    todo comparándolo con tu idioma materno.
-                </div>
-            </div>
+        <!-- Expresiones -->
+        <a href="categoria/gramatica/index.html" class="category-card fade-up delay-2">
+          <div class="category-icon cat-orange">
+            <i class="fas fa-comments"></i>
+          </div>
+          <div class="category-body">
+            <h3>Expresiones útiles</h3>
+            <p>Frases hechas, conectores del discurso y expresiones del día a día que no encontrarás en los libros de
+              texto.</p>
+          </div>
+          <div class="category-footer">
+            <span class="category-count">11 artículos</span>
+            <span class="category-arrow"><i class="fas fa-arrow-right"></i></span>
+          </div>
+        </a>
+
+        <!-- Vida diaria -->
+        <a href="categoria/vocabulario/index.html" class="category-card fade-up delay-3">
+          <div class="category-icon cat-teal">
+            <i class="fas fa-house-chimney"></i>
+          </div>
+          <div class="category-body">
+            <h3>Vida diaria en NL</h3>
+            <p>Neerlandés práctico para situaciones reales: médico, banco, transporte público, trabajo y trámites
+              administrativos.</p>
+          </div>
+          <div class="category-footer">
+            <span class="category-count">8 artículos</span>
+            <span class="category-arrow"><i class="fas fa-arrow-right"></i></span>
+          </div>
+        </a>
+
+        <!-- Recursos -->
+        <a href="categoria/recursos/index.html" class="category-card fade-up delay-3">
+          <div class="category-icon cat-pink">
+            <i class="fas fa-graduation-cap"></i>
+          </div>
+          <div class="category-body">
+            <h3>Recursos para alumnos</h3>
+            <p>Todo lo que necesitas para aprovechar el curso: cómo acceder, usar las flashcards, entrar en Circle y
+              más.</p>
+          </div>
+          <div class="category-footer">
+            <span class="category-count">6 artículos</span>
+            <span class="category-arrow"><i class="fas fa-arrow-right"></i></span>
+          </div>
+        </a>
+
+        <!-- Acceso y soporte -->
+        <a href="categoria/recursos/index.html" class="category-card fade-up delay-4">
+          <div class="category-icon cat-yellow">
+            <i class="fas fa-headset"></i>
+          </div>
+          <div class="category-body">
+            <h3>Acceso y soporte</h3>
+            <p>¿Problemas técnicos? ¿No encuentras algo? Aquí están todas las respuestas sobre acceso, facturación y
+              soporte.</p>
+          </div>
+          <div class="category-footer">
+            <span class="category-count">5 artículos</span>
+            <span class="category-arrow"><i class="fas fa-arrow-right"></i></span>
+          </div>
+        </a>
+
+        <!-- Blog -->
+        <a href="blog/index.html" class="category-card fade-up delay-4">
+          <div class="category-icon cat-red">
+            <i class="fas fa-pen-nib"></i>
+          </div>
+          <div class="category-body">
+            <h3>Blog educativo</h3>
+            <p>Artículos en profundidad, comparativas de gramática, curiosidades del idioma y guías para todos los
+              niveles.</p>
+          </div>
+          <div class="category-footer">
+            <span class="category-count">12 posts</span>
+            <span class="category-arrow"><i class="fas fa-arrow-right"></i></span>
+          </div>
+        </a>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- POPULAR ARTICLES STRIP -->
+  <section style="padding: 0 0 80px;">
+    <div class="container">
+      <div class="section-header fade-up">
+        <div class="section-label"><i class="fas fa-fire"></i> Más populares</div>
+        <h2 class="section-title">Artículos más leídos</h2>
+      </div>
+      <div class="article-list fade-up delay-1">
+        <a href="articulo/diferencia-zijn-hebben/index.html" class="article-list-item">
+          <div class="article-list-icon"><i class="fas fa-book-open"></i></div>
+          <div class="article-list-body">
+            <h4>La diferencia entre zijn y hebben — Guía completa con ejemplos</h4>
+            <p>Cuándo usar ser/estar y cuándo usar haber/tener en neerlandés. Reglas y excepciones.</p>
+          </div>
+          <span class="article-list-arrow"><i class="fas fa-arrow-right"></i></span>
+        </a>
+        <a href="articulo/omdat-vs-want/index.html" class="article-list-item">
+          <div class="article-list-icon"><i class="fas fa-link"></i></div>
+          <div class="article-list-body">
+            <h4>Omdat vs Want — ¿Qué diferencia hay y cuándo usar cada uno?</h4>
+            <p>Las dos formas de decir "porque" en neerlandés no son intercambiables. Aprende a usarlas bien.</p>
+          </div>
+          <span class="article-list-arrow"><i class="fas fa-arrow-right"></i></span>
+        </a>
+        <a href="articulo/vocabulario-supermercado/index.html" class="article-list-item">
+          <div class="article-list-icon"><i class="fas fa-cart-shopping"></i></div>
+          <div class="article-list-body">
+            <h4>Vocabulario del supermercado en neerlandés — 60+ palabras esenciales</h4>
+            <p>Frutas, verduras, lácteos, carnes y más. Con pronunciación y frases útiles para hacer la compra.</p>
+          </div>
+          <span class="article-list-arrow"><i class="fas fa-arrow-right"></i></span>
+        </a>
+        <a href="articulo/vocabulario-farmacia/index.html" class="article-list-item">
+          <div class="article-list-icon"><i class="fas fa-pills"></i></div>
+          <div class="article-list-body">
+            <h4>Vocabulario de la farmacia — Cómo pedir medicamentos en neerlandés</h4>
+            <p>Todo lo que necesitas saber para ir a la apotheek: síntomas, medicamentos y preguntas esenciales.</p>
+          </div>
+          <span class="article-list-arrow"><i class="fas fa-arrow-right"></i></span>
+        </a>
+        <a href="articulo/como-acceder-al-curso/index.html" class="article-list-item">
+          <div class="article-list-icon"><i class="fas fa-key"></i></div>
+          <div class="article-list-body">
+            <h4>Cómo acceder al curso de Holandés con Nawar</h4>
+            <p>Paso a paso: desde la compra hasta entrar en la plataforma y encontrar tus lecciones.</p>
+          </div>
+          <span class="article-list-arrow"><i class="fas fa-arrow-right"></i></span>
+        </a>
+        <a href="articulo/como-usar-flashcards/index.html" class="article-list-item">
+          <div class="article-list-icon"><i class="fas fa-bolt"></i></div>
+          <div class="article-list-body">
+            <h4>Cómo aprovechar al máximo las flashcards del curso</h4>
+            <p>Consejos y estrategias de repetición espaciada para memorizar vocabulario de forma efectiva.</p>
+          </div>
+          <span class="article-list-arrow"><i class="fas fa-arrow-right"></i></span>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer>
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <div class="nav-logo" style="margin-bottom: 12px;">
+            <div class="nav-logo-icon">N</div>
+            <span class="nav-logo-text">Nawar</span>
+          </div>
+          <p>El centro de ayuda oficial para alumnos e interesados en aprender neerlandés desde el español.</p>
+          <div class="footer-social">
+            <a href="#"><i class="fab fa-instagram"></i></a>
+            <a href="#"><i class="fab fa-tiktok"></i></a>
+            <a href="#"><i class="fab fa-youtube"></i></a>
+          </div>
         </div>
-    </section>
-
-    <!-- Final CTA -->
-    <section class="container text-center" style="padding: 6rem 0;">
-        <h2 class="mb-md" style="font-size: 2.5rem;">El neerlandés no tiene por qué ser una barrera.</h2>
-        <p class="mb-md" style="color: var(--text-muted); max-width: 600px; margin: 0 auto 2rem;">Con el método adecuado
-            y apoyo real, puede convertirse en tu mayor ventaja en Países Bajos.</p>
-        <div style="display: flex; gap: 1rem; justify-content: center; flex-wrap: wrap;">
-            <a href="#curso-principal" class="btn btn-primary">Empezar ahora con el curso A0–A1</a>
-            <a href="#contacto" class="btn btn-secondary">Hablar con nosotros</a>
+        <div class="footer-col">
+          <h5>Temas</h5>
+          <ul>
+            <li><a href="categoria/gramatica/index.html">Gramática</a></li>
+            <li><a href="categoria/vocabulario/index.html">Vocabulario</a></li>
+            <li><a href="categoria/pronunciacion/index.html">Pronunciación</a></li>
+            <li><a href="categoria/recursos/index.html">Recursos</a></li>
+          </ul>
         </div>
-    </section>
-
-    <!-- Footer -->
-    <footer>
-        <div class="container">
-            <div class="footer-grid">
-                <div>
-                    <h4 class="logo mb-sm">Holandés con Nawar</h4>
-                    <p style="font-size: 0.9rem; color: var(--text-muted);">Formaciones de neerlandés para
-                        hispanohablantes que quieren algo más que un curso genérico.</p>
-                </div>
-                <div>
-                    <h4 class="mb-sm">Enlaces</h4>
-                    <ul
-                        style="color: var(--text-muted); font-size: 0.9rem; display: flex; flex-direction: column; gap: 0.5rem;">
-                        <li><a href="#">Inicio</a></li>
-                        <li><a href="#cursos">Cursos</a></li>
-                        <li><a href="#blog">Blog</a></li>
-                        <li><a href="#contacto">Contacto</a></li>
-                    </ul>
-                </div>
-                <div>
-                    <h4 class="mb-sm">Legal</h4>
-                    <ul
-                        style="color: var(--text-muted); font-size: 0.9rem; display: flex; flex-direction: column; gap: 0.5rem;">
-                        <li><a href="#">Términos y condiciones</a></li>
-                        <li><a href="#">Política de privacidad</a></li>
-                        <li><a href="#">Política de cookies</a></li>
-                    </ul>
-                </div>
-                <div>
-                    <h4 class="mb-sm">Contacto</h4>
-                    <p style="color: var(--text-muted); font-size: 0.9rem; margin-bottom: 1rem;">info@holandesnawar.com
-                    </p>
-                    <div style="display: flex; gap: 1rem;">
-                        <a href="#" style="font-size: 1.5rem;"><i class="fab fa-instagram"></i></a>
-                        <a href="#" style="font-size: 1.5rem;"><i class="fab fa-facebook"></i></a>
-                    </div>
-                </div>
-            </div>
-            <div class="footer-bottom">
-                <p>&copy; 2025 HOLANDÉS NAWAR. Todos los derechos reservados.</p>
-            </div>
+        <div class="footer-col">
+          <h5>Contenido</h5>
+          <ul>
+            <li><a href="blog/index.html">Blog</a></li>
+            <li><a href="articulo/diferencia-zijn-hebben/index.html">Zijn vs Hebben</a></li>
+            <li><a href="articulo/omdat-vs-want/index.html">Omdat vs Want</a></li>
+            <li><a href="articulo/vocabulario-supermercado/index.html">Vocabulario</a></li>
+          </ul>
         </div>
-    </footer>
+        <div class="footer-col">
+          <h5>Ayuda</h5>
+          <ul>
+            <li><a href="articulo/como-acceder-al-curso/index.html">Acceso al curso</a></li>
+            <li><a href="articulo/como-usar-flashcards/index.html">Flashcards</a></li>
+            <li><a href="#">Soporte</a></li>
+            <li><a href="#">Contacto</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <span>© 2026 Nawar. Todos los derechos reservados.</span>
+        <span style="display:flex; gap: 20px;">
+          <a href="#">Privacidad</a>
+          <a href="#">Términos</a>
+          <a href="#">Cookies</a>
+        </span>
+      </div>
+    </div>
+  </footer>
 
-    <script>
-        function toggleMenu() {
-            const menu = document.getElementById('mobileMenu');
-            menu.classList.toggle('active');
-
-            if (menu.classList.contains('active')) {
-                document.body.style.overflow = 'hidden';
-            } else {
-                document.body.style.overflow = 'auto';
-            }
-        }
-
-        // Vanilla Tilt Effect
-        document.addEventListener('mousemove', (e) => {
-            document.querySelectorAll('.glass-panel').forEach(card => {
-                const rect = card.getBoundingClientRect();
-                const x = e.clientX - rect.left;
-                const y = e.clientY - rect.top;
-
-                // Only apply if mouse is near/over the card to save performance
-                if (x > -50 && x < rect.width + 50 && y > -50 && y < rect.height + 50) {
-                    const centerX = rect.width / 2;
-                    const centerY = rect.height / 2;
-
-                    const rotateX = ((y - centerY) / centerY) * -5; // Max rotation deg
-                    const rotateY = ((x - centerX) / centerX) * 5;
-
-                    card.style.transform = `perspective(1000px) rotateX(${rotateX}deg) rotateY(${rotateY}deg) scale3d(1.02, 1.02, 1.02)`;
-                } else {
-                    card.style.transform = 'perspective(1000px) rotateX(0) rotateY(0) scale3d(1, 1, 1)';
-                }
-            });
-        });
-    </script>
-
+  <script src="assets/js/main.js"></script>
 </body>
 
 </html>
-```
